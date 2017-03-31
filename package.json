@@ -18,7 +18,7 @@
     "emmappconfig",
     "emm",
     "mdm",
-    "managed"
+    "managed",
     "appconfig",
     "ecosystem:cordova",
     "cordova-android",
