@@ -9,9 +9,9 @@ var argscheck = require('cordova/argscheck'),
     exec = require('cordova/exec'),
     cordova = require('cordova');
 
-channel.createSticky('onCordovaInfoReady');
-// Tell cordova channel to wait on the CordovaInfoReady event
-channel.waitForInitialization('onCordovaInfoReady');
+channel.createSticky('onEmmAppConfigReady');
+// Tell cordova channel to wait on the EmmAppConfigReady event
+channel.waitForInitialization('onEmmAppConfigReady');
 
 /**
  * This class provides methods for getting EMM application configuration and 
@@ -30,7 +30,7 @@ function EmmAppConfig()
     {
       var successCallback = function(info) {
         self._appConfig = info;
-        channel.onCordovaInfoReady.fire();
+        channel.onEmmAppConfigReady.fire();
       };
       var errorCallback = function(e) {
         console.log('[ERROR] Error from EmmAppConfig.getConfigInfo: ' + e);

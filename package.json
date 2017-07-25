@@ -1,6 +1,6 @@
 {
   "name": "cordova-plugin-emm-app-config",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Cordova EmmAppConfig Plugin",
   "cordova": {
     "id": "cordova-plugin-emm-app-config",

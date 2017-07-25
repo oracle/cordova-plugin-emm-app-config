@@ -8,7 +8,7 @@
     xmlns:rim="http://www.blackberry.com/ns/widgets"
     xmlns:android="http://schemas.android.com/apk/res/android"
     id="cordova-plugin-emm-app-config"
-    version="1.1.2">
+    version="1.0.1">
     <name>EmmAppConfig</name>
     <description>Cordova EmmAppConfig Plugin</description>
     <license>UPL 1.0</license>
