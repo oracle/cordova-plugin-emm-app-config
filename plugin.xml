@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-  Copyright (c) 2016 Oracle and/or its affiliates
+  Copyright (c) 2017 Oracle and/or its affiliates
   The Universal Permissive License (UPL), Version 1.0
 -->
 
@@ -8,9 +8,9 @@
     xmlns:rim="http://www.blackberry.com/ns/widgets"
     xmlns:android="http://schemas.android.com/apk/res/android"
     id="cordova-plugin-emm-app-config"
-    version="1.0.1">
-    <name>EmmAppConfig</name>
-    <description>Cordova EmmAppConfig Plugin</description>
+    version="1.0.2">
+    <name>Cordova EMM App Config Plugin</name>
+    <description>Enables apps to retrieve information on EMM application configuration (or managed app configuration)</description>
     <license>UPL 1.0</license>
     <keywords>cordova,emmappconfig</keywords>
     <repo>https://github.com/oracle/cordova-plugin-emm-app-config.git</repo>

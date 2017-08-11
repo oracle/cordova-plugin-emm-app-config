@@ -1,7 +1,7 @@
 {
   "name": "cordova-plugin-emm-app-config",
-  "version": "1.0.1",
-  "description": "Cordova EmmAppConfig Plugin",
+  "version": "1.0.2",
+  "description": "Enables apps to retrieve information on EMM application configuration (or managed app configuration)",
   "cordova": {
     "id": "cordova-plugin-emm-app-config",
     "platforms": [
