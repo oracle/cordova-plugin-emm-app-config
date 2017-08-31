@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<restrictions xmlns:android="http://schemas.android.com/apk/res/android">
+    <restriction
+            android:key="KEY1"
+            android:title="KEY 1 NAME"
+            android:description="@string/appconfig_key1"
+            android:restrictionType="string" />
+
+    <restriction
+            android:key="KEY2"
+            android:title="KEY 2 NAME"
+            android:description="@string/appconfig_key2"
+            android:restrictionType="bool"
+            android:defaultValue="false" />
+</restrictions>
