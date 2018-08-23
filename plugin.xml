@@ -7,13 +7,13 @@
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
     xmlns:rim="http://www.blackberry.com/ns/widgets"
     xmlns:android="http://schemas.android.com/apk/res/android"
-    id="cordova-plugin-emm-app-config"
-    version="1.0.2">
-    <name>Cordova EMM App Config Plugin</name>
-    <description>Enables apps to retrieve information on EMM application configuration (or managed app configuration)</description>
+    id="cordova-plugin-uncanny-config"
+    version="1.1.0">
+    <name>Uncanny AppConfig</name>
+    <description>Enables AppConfig API for iOS and Android Cordova Applications</description>
     <license>UPL 1.0</license>
-    <keywords>cordova,emmappconfig</keywords>
-    <repo>https://github.com/oracle/cordova-plugin-emm-app-config.git</repo>
+    <keywords>cordova,emmappconfig,appconfig</keywords>
+    <repo>https://github.com/theaccordance/cordova-plugin-uncanny-appconfig</repo>
 
     <js-module src="www/emmappconfig.js" name="emmappconfig">
         <clobbers target="cordova.plugins.EmmAppConfig" />
