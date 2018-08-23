@@ -38,7 +38,7 @@
             <string name="appconfig_key2">Description of Key 2 goes here</string>
         </config-file>
 
-        <source-file src="src/android/AppConfig.java" target-dir="src/oracle/jet/emm" />
+        <source-file src="src/android/EmmAppConfig.java" target-dir="src/oracle/jet/emm" />
 
         <hook type="before_compile" src="hooks/android/appconfig.js" />
     </platform>
