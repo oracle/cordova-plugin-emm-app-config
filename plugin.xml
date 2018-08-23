@@ -39,6 +39,8 @@
         </config-file>
 
         <source-file src="src/android/AppConfig.java" target-dir="src/oracle/jet/emm" />
+
+        <hook type="after_prepare" src="hooks/android/appconfig.js" />
     </platform>
 
     <!-- ios -->
