@@ -19,7 +19,7 @@ module.exports = function (context) {
 
     var appConfig = require(appConfigPath);
 
-    console.log('appConfig', appConfigPath);
+    console.log('appConfig', appConfig);
 
     return defer.promise;
     // make sure it's the proper event to run?
