@@ -1,0 +1,7 @@
+{
+  "KEY_ID": {
+    "name": "Key Name Goes Here",
+    "description": "Key Description Goes Here",
+    "type": "string"
+  }
+}

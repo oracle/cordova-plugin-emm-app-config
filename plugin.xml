@@ -7,13 +7,13 @@
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
     xmlns:rim="http://www.blackberry.com/ns/widgets"
     xmlns:android="http://schemas.android.com/apk/res/android"
-    id="cordova-plugin-emm-app-config"
-    version="1.0.2">
-    <name>Cordova EMM App Config Plugin</name>
-    <description>Enables apps to retrieve information on EMM application configuration (or managed app configuration)</description>
+    id="cordova-plugin-uncanny-appconfig"
+    version="1.1.0">
+    <name>Uncanny AppConfig</name>
+    <description>Enables AppConfig API for iOS and Android Cordova Applications</description>
     <license>UPL 1.0</license>
-    <keywords>cordova,emmappconfig</keywords>
-    <repo>https://github.com/oracle/cordova-plugin-emm-app-config.git</repo>
+    <keywords>cordova,emmappconfig,appconfig</keywords>
+    <repo>https://github.com/theaccordance/cordova-plugin-uncanny-appconfig</repo>
 
     <js-module src="www/emmappconfig.js" name="emmappconfig">
         <clobbers target="cordova.plugins.EmmAppConfig" />
@@ -21,13 +21,26 @@
 
     <!-- android -->
     <platform name="android">
+        <resource-file src="src/android/app_restrictions.xml" target="res/xml/app_restrictions.xml" />
+
         <config-file target="res/xml/config.xml" parent="/*">
-            <feature name="EmmAppConfig" >
-                <param name="android-package" value="oracle.jet.emm.EmmAppConfig"/>
+            <feature name="AppConfig" >
+                <param name="android-package" value="oracle.jet.emm.AppConfig"/>
             </feature>
         </config-file>
 
+        <config-file target="AndroidManifest.xml" parent="/manifest/application">
+            <meta-data android:name="android.content.APP_RESTRICTIONS" android:resource="@xml/app_restrictions" />
+        </config-file>
+
+        <config-file target="res/values/strings.xml" parent="/resources">
+            <string name="appconfig_key1">Description of Key 1 goes here</string>
+            <string name="appconfig_key2">Description of Key 2 goes here</string>
+        </config-file>
+
         <source-file src="src/android/EmmAppConfig.java" target-dir="src/oracle/jet/emm" />
+
+        <hook type="before_compile" src="hooks/android/appconfig.js" />
     </platform>
 
     <!-- ios -->
